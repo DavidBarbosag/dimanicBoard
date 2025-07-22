@@ -1,10 +1,12 @@
 package com.eci.ARSW.DinamicBoard.model;
 
 public class Stroke {
+    private String strokeId;
     private float x;
     private float y;
     private String color;
     private float thickness;
+    private String gameCode;
 
     public Stroke() {}
 
@@ -30,5 +32,21 @@ public class Stroke {
 
     public void setThickness(float thickness) {
         this.thickness = thickness;
+    }
+
+    public String getStrokeId() {
+        return strokeId;
+    }
+
+    public void setStrokeId(String strokeId) {
+        this.strokeId = strokeId;
+    }
+
+    public String getGameCode() {
+        return gameCode;
+    }
+
+    public void setGameCode(String gameCode) {
+        this.gameCode = gameCode;
     }
 }
